@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+/* ヘッダーの設定 */
+header {
+    /* background: rgb(89, 136, 154); */
+    background: #031b3b;
+    position: fixed;
+    width: 100%;
+}
+
+div.container-header {
+    height: 90px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-logo img {
+    width: 300px;
+    height: 90px;
+}
+
+.menu {
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.menu:hover {
+    color: yellow;
+}
+
+ul {
+    margin: 32px;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+.gnav-item {
+    list-style: none;
+    font-weight: bold;
+}
+
+/* メインコンテンツの設定 */
+
+main {
+    color: #000;
+    background: #CBEDF2;
+}
+
+h2 {
+    font-size: 32px;
+    padding: 8px;
+    margin: 24px auto;
+}
+
+h3 {
+    margin: 0 auto;
+}
+
+.notes {
+    margin: 0 auto;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    gap: 32px;
+}
+
+.first-view-pc img {
+    display: block;
+    width: 100%;
+}
+
+.first-view-mobile img {
+    display: none;
+}
+
+/* WORK */
+
+/* Webサイト・ブログのサムネイル設定 */
+
+.work-list-websites {
+    display: flex;
+    margin: 0 auto;
+    gap: 32px;
+    height: 160px;
+}
+
+.work-item-ws img {
+    box-sizing: border;
+    border: 1px solid blue;
+    width: 300px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.thumbnail-websites {
+    display: inline-block;
+}
+
+.thumbnail-websites:hover {
+    border: 3px solid yellow;
+    height: 162px;
+}
+
+/* バナー広告のサムネイル設定 */
+
+.work-list-banners {
+    display: flex;
+    margin: 0 auto;
+    gap: 32px;
+    height: 264px;
+}
+
+.work-item-bn img {
+    box-sizing: border;
+    border: 1px solid blue;
+    width: 302px;
+    height: 264px;
+    object-fit: cover;
+}
+
+.thumbnail-banners {
+    display: inline-block;
+}
+
+.thumbnail-banners:hover {
+    border: 3px solid yellow;
+    height: 264px;
+}
+
+/* SKILL */
+
+.skill-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-left: 115px;
+}
+
+.skill-items {
+    /* border:1px solid blue; */
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.skill-img {
+    width: 60px;
+    margin: auto;
+}
+
+.skill-body {
+    flex: 1;
+}
+
+.skill-item-img {
+    width: 60px;
+}
+
+.skill-name {
+    margin-bottom: 10px;
+}
+
+.skill-text {
+    font-size: 14px;
+}
+
+/* ABOUT ME */
+
+.profile-box {
+    display: flex;
+    margin: 16px auto;
+}
+
+.profile-img img {
+    width: 150px;
+    height: 150px;
+    margin-right: 64px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.profile-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-title p {
+    margin: 0;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.profile-description {
+    width: auto;
+}
+
+/* CONTACT */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.contact-info {
+    margin: 0 auto;
+}
+
+table,
+th,
+td {
+    border: 1px #fff solid;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 4px 8px;
+}
+
+.contact p {
+    text-align: center;
+}
+
+.sns-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+
+}
+
+hr {
+    margin-top: 48px;
+}
+
+footer {
+    background: #031b3b;
+    color: #FFF;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    .first-view img {
+        display: none;
+    }
+
+    .first-view {
+        padding: 0;
+    }
+
+    .first-view img {
+        display: block;
+        width: 100%;
+    }
+
+}
