@@ -1,2 +1,3 @@
 #Photoshop編集ファイルを管理対象から外す
 psd/
+.DS_Store
