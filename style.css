@@ -58,8 +58,8 @@ main {
 
 h2 {
     font-size: 32px;
-    padding: 8px;
     margin: 8px auto;
+    border-bottom: 10px solid yellow;
 }
 
 h3 {
