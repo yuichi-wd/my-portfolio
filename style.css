@@ -53,12 +53,13 @@ li {
 main {
     color: #000;
     background: #CBEDF2;
+    padding-bottom: 16px;
 }
 
 h2 {
     font-size: 32px;
     padding: 8px;
-    margin: 24px auto;
+    margin: 8px auto;
 }
 
 h3 {
@@ -185,21 +186,46 @@ h3 {
     font-size: 14px;
 }
 
-/* ABOUT ME */
+/* === ABOUT ME === */
 
-.profile-box {
+/* 大コンテナ */
+.profile-container {
     display: flex;
     margin: 16px auto;
 }
 
-.profile-img img {
+/* コンテナ①（イラストとSNSリンク） */
+
+.profile-img-and-sns {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+.profile-img-and-sns img {
+    display: block;
     width: 150px;
     height: 150px;
-    margin-right: 64px;
+    margin: 0 auto;
     border-radius: 5%;
     object-fit: cover;
 }
 
+.sns-list {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    margin: 16px auto;
+    gap: 16px;
+
+}
+
+.sns-list img {
+    width: 32px;
+    height: 32px;
+}
+
+/* コンテナ②（プロフィール本文） */
 .profile-body {
     display: flex;
     flex-direction: column;
@@ -216,65 +242,43 @@ h3 {
 }
 
 /* CONTACT */
-
-.contact-heading {
-    margin-bottom: 4px;
-}
-
-.form-parts {
+.form-container {
     margin: 0 auto;
-    width: 500px;
 }
 
-input {
-    display: block;
-    width: 100%;
+.form-label {
+    margin: 4px 0;
 }
 
-textarea {
-    width: 100%;
-}
-
-.contact-span {
+.mark-required {
     color: red;
 }
 
-.contact-info {
-    margin: 0 auto;
+.input-textbox {
+    width: 350px;
+    margin: 4px 0;
 }
 
-.radiobutton-box {
+.input-textarea {
+    width: 350px;
+    margin: 4px 0;
+}
+
+.radiobutton-container {
     display: flex;
+    margin: 4px 0;
+
 }
 
 .radiobutton {
-    width: 16px;
-    height: 16px;
+    margin-right: 4px;
 }
 
-table,
-th,
-td {
-    border: 1px #fff solid;
-    border-collapse: collapse;
+.spacer {
+    height: 100px;
 }
 
-td,
-th {
-    padding: 4px 8px;
-}
 
-.contact p {
-    text-align: center;
-}
-
-.sns-list {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    text-align: center;
-
-}
 
 hr {
     margin-top: 48px;
