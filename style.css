@@ -34,12 +34,12 @@ div.container-header {
     color: yellow;
 }
 
-ul {
+.gnav-list {
     margin: 32px;
     padding: 0;
 }
 
-li {
+.gnav-list>li {
     display: inline-block;
 }
 
@@ -95,9 +95,65 @@ h3 {
     display: none;
 }
 
-/* WORK */
+/*==================================================
+WORKS ギャラリーのためのcss
+===================================*/
+.gallery {
+    columns: 4;
+    /*段組みの数*/
+    padding: 0 15px;
+    /*ギャラリー左右に余白をつける*/
+    margin: 0;
+}
 
-/* Webサイト・ブログのサムネイル設定 */
+.gallery li {
+    margin-bottom: 20px;
+    /*各画像下に余白をつける*/
+    list-style: none;
+}
+
+/*ギャラリー内のイメージは横幅100%にする*/
+.gallery img {
+    width: 300px;
+    height: auto;
+    vertical-align: bottom;
+    /*画像の下にできる余白を削除*/
+}
+
+/*　横幅900px以下の段組み設定　*/
+@media only screen and (max-width: 900px) {
+    .gallery {
+        columns: 3;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .gallery {
+        columns: 2;
+    }
+}
+
+/*画像を出現させるアニメーションCSS*/
+
+.flipLeft {
+    animation-name: flipLeft;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    perspective-origin: left center;
+    opacity: 0;
+}
+
+@keyframes flipLeft {
+    from {
+        transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+        opacity: 1;
+    }
+}
 
 .work-list-websites {
     display: flex;
@@ -106,48 +162,7 @@ h3 {
     height: 160px;
 }
 
-.work-item-ws img {
-    box-sizing: border;
-    border: 1px solid blue;
-    width: 300px;
-    height: 160px;
-    object-fit: cover;
-}
 
-.thumbnail-websites {
-    display: inline-block;
-}
-
-.thumbnail-websites:hover {
-    border: 3px solid yellow;
-    height: 162px;
-}
-
-/* バナー広告のサムネイル設定 */
-
-.work-list-banners {
-    display: flex;
-    margin: 0 auto;
-    gap: 32px;
-    height: 264px;
-}
-
-.work-item-bn img {
-    box-sizing: border;
-    border: 1px solid blue;
-    width: 302px;
-    height: 264px;
-    object-fit: cover;
-}
-
-.thumbnail-banners {
-    display: inline-block;
-}
-
-.thumbnail-banners:hover {
-    border: 3px solid yellow;
-    height: 264px;
-}
 
 /* SKILL */
 

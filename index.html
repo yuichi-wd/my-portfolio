@@ -5,104 +5,102 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Yuichi's Web Laboratory</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
     </head>
-    <body>
-        <!-- ヘッダーの構造 -->
-        <header>
-            <div class="container-header">
-                <div class="site-logo">
-                    <img src="images/logo.png">
-                </div>
-                <nav class="global-navigation">
-                    <ul class="gnav-list">
-                        <li class="gnav-item">
-                            <a class="menu" href="index.html">HOME</a>
-                        </li>
-                        <li class="gnav-item">
-                            <a class="menu" href="#about">ABOUT ME</a>
-                        </li>
-                        <li class="gnav-item">
-                            <a class="menu" href="#works">MY WORKS</a>
-                        </li>
-                        <li class="gnav-item">
-                            <a class="menu" href="#skills">SKILL SET</a>
-                        </li>
-                        <li class="gnav-item">
-                            <a class="menu" href="#contact">CONTACT</a>
-                        </li>
-                    </ul>
-                </nav>
+</head>
+<body>
+    <!-- ヘッダーの構造 -->
+    <header>
+        <div class="container-header">
+            <div class="site-logo">
+                <img src="images/logo.png">
             </div>
-        </header>
-        <!--メインの構造  -->
-        <main>
-            <section>
-                <div class="first-view-pc">
-                    <img src="images/first-view.png">
-                </div>
-                <div class="first-view-mobile">
-                    <img src="images/first-view.png">
-                </div>
-            </section>
-            <section id="works">
-                <div class="container-main">
-                    <h2>MY WORKS</h2>
-                    <p class="notes">サムネイルをクリックすると作品のページが表示されます。</p>
-                    <h3>WEBサイト</h3>
-                    <div class="work-list-websites">
-                        <a href="https://xs247058.xsrv.jp/wp-koumuten/" class="thumbnail-websites">
-                            <div class="work-item-ws">
-                                <img src="images/works/wordpress01.png">
-                            </div>
+            <nav class="global-navigation">
+                <ul class="gnav-list">
+                    <li class="gnav-item">
+                        <a class="menu" href="index.html">HOME</a>
+                    </li>
+                    <li class="gnav-item">
+                        <a class="menu" href="#about">ABOUT ME</a>
+                    </li>
+                    <li class="gnav-item">
+                        <a class="menu" href="#works">MY WORKS</a>
+                    </li>
+                    <li class="gnav-item">
+                        <a class="menu" href="#skills">SKILL SET</a>
+                    </li>
+                    <li class="gnav-item">
+                        <a class="menu" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--メインの構造  -->
+    <main>
+        <section>
+            <div class="first-view-pc">
+                <img src="images/first-view.png">
+            </div>
+            <div class="first-view-mobile">
+                <img src="images/first-view.png">
+            </div>
+        </section>
+        <section id="works">
+            <div class="container-main">
+                <h2>MY WORKS</h2>
+                <ul class="gallery">
+                    <li>
+                        <a href="images/works/blog01.png" data-lightbox="gallery1" data-title="キャプション">
+                            <img src="images/works/blog01.png" alt="">
                         </a>
-                        <a href="https://xs247058.xsrv.jp/wp-as-jimusho/" class="thumbnail-websites">
-                            <div class="work-item-ws">
-                                <img src="images/works/wordpress02.png">
-                            </div>
+                    </li>
+                    <li>
+                        <a href="images/works/wordpress01.png" data-lightbox="gallery1" data-title="キャプション">
+                            <img src="images/works/wordpress01.png" alt="">
                         </a>
-                        <a href="https://xs247058.xsrv.jp/hairtech/" class="thumbnail-websites">
-                            <div class="work-item-ws">
-                                <img src="images/works/wordpress03.png">
-                            </div>
+                    </li>
+                    <li>
+                        <a href="images/works/photoshop01.png" data-lightbox="gallery1" data-title="キャプション">
+                            <img src="images/works/photoshop01.png" alt="">
                         </a>
-                    </div>
-                    <h3>ブログ</h3>
-                    <div class="work-list-websites">
-                        <a href="https://walk-toyama.com" class="thumbnail-websites">
-                            <div class="work-item-ws">
-                                <img src="images/works/blog01.jpeg">
-                            </div>
+                    </li>
+                    <li>
+                        <a href="images/works/photoshop02.png" data-lightbox="gallery1" data-title="キャプション">
+                            <img src="images/works/photoshop02.png" alt="">
                         </a>
-                        <a href="https://en.walk-toyama.com" class="thumbnail-websites">
-                            <div class="work-item-ws">
-                                <img src="images/works/blog02.jpeg">
-                            </div>
+                    </li>
+                    <li>
+                        <a href="images/works/blog02.png" data-lightbox="gallery1" data-title="キャプション">
+                            <img src="images/works/blog02.png" alt="">
                         </a>
-                        <a href="https://wabisabi-english.jp" class="thumbnail-websites">
-                            <div class="work-item-ws">
-                                <img src="images/works/blog03.jpeg">
-                            </div>
+                    </li>
+                    <li>
+                        <a href="images/works/wordpress02.png" data-lightbox="gallery1" data-title="キャプション">
+                            <img src="images/works/wordpress02.png" alt="">
                         </a>
-                    </div>
-                    <h3>バナー広告</h3>
-                    <div class="work-list-banners">
-                        <a href="https://github.com/yuichi-guide/my-portfolio/blob/93c999d75afcd308c07b2d2cbbdb0f1cb3a30ab7/images/works/photoshop01.png" class="thumbnail-banners">
-                            <div class="work-item-bn">
-                                <img src="images/works/photoshop01.png">
-                            </div>
+                    </li>
+                    <li>
+                        <a href="images/works/photoshop03.png" data-lightbox="gallery1" data-title="キャプション">
+                            <img src="images/works/photoshop03.png" alt="">
                         </a>
-                        <a href="https://github.com/yuichi-guide/my-portfolio/blob/93c999d75afcd308c07b2d2cbbdb0f1cb3a30ab7/images/works/photoshop02.png" class="thumbnail-banners">
-                            <div class="work-item-bn">
-                                <img src="images/works/photoshop02.png">
-                            </div>
+                    </li>
+                    <li>
+                        <a href="images/works/wordpress03.png" data-lightbox="gallery1" data-title="キャプション">
+                            <img src="images/works/wordpress03.png" alt="">
                         </a>
-                        <a href="https://github.com/yuichi-guide/my-portfolio/blob/93c999d75afcd308c07b2d2cbbdb0f1cb3a30ab7/images/works/photoshop03.png" class="thumbnail-banners">
-                            <div class="work-item-bn">
-                                <img src="images/works/photoshop03.png">
-                            </div>
+                    </li>
+                    <li>
+                        <a href="images/works/blog03.png" data-lightbox="gallery1" data-title="キャプション">
+                            <img src="images/works/blog03.png" alt="">
                         </a>
-                    </div>
-                </div>
+                    </li>
+                    <li>
+                        <a href="images/works/blog04.png" data-lightbox="gallery1" data-title="キャプション">
+                            <img src="images/works/blog04.png" alt="">
+                        </a>
+                    </li>
+                </ul>
             </section>
             <section id="skills">
                 <div class="container-main">
@@ -314,5 +312,10 @@
             <footer>
                 <small>©︎2023 YUICHI'S WEB LABORATORY</small>
             </footer>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+            <!--自作のJS-->
+            <script src="js/6-2-1.js"></script>
         </body>
-    </html>
+    </body>
+</html>
